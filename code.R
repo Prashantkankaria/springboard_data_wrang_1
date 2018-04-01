@@ -49,6 +49,6 @@ ref <- ref %>% mutate (
                         product_laptop = ifelse(product_code == "x", 1, 0),
                         product_tablet = ifelse(product_code == "q", 1, 0)
                          )
-#Final table
-print(ref)
+#Write the CSV File output
+write.csv(ref, "refine_clean.csv")
                 
